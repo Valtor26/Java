@@ -24,3 +24,4 @@ class Hello{
         System.out.println("Sum of x, y, z and f is: " + (x + y + z + f));
     }
 }
+
