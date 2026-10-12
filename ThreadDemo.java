@@ -21,6 +21,18 @@ Thread.NORM_PRIORITY -->	5	--> Normal priority
 Thread.MAX_PRIORITY	 -->    10	--> Highest priority
 
 
+
+Thread States:
+
+1. New: The thread is newly created and has not yet started. (Thread t1 = new Thread(obj1);)
+2. Runnable: The thread is ready to run. (t1.start();)
+3. Running: The thread is currently running. (t1.run();)
+4. Waiting: The thread is waiting for another thread to complete a task. (t1.join(); t1.sleep(); t1.wait();)
+5. Blocked: The thread is blocked waiting for a resource to become available. (t1.sleep();)
+6. Terminated: The thread has completed its execution. (t1.stop();) (deprecated)
+
+when the thread is in waiting state, to comeback/continue we use .notify() method. This method changes the state of the thread from waiting to runnable. 
+
 */
 
 class A extends Thread{
