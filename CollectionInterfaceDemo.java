@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -74,6 +75,14 @@ public class CollectionInterfaceDemo {
 
         for(int i : s2){
             System.out.println(i);
+         }
+
+
+
+         // Iterator: An interface for traversing the elements of a collection
+         Iterator<Integer> it = s2.iterator();
+         while(it.hasNext()){
+             System.out.println(it.next());
          }
         
     }
