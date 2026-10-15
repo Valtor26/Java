@@ -12,3 +12,14 @@ Maven commands:
 4. mvn test (compile + test): to run the unit tests, it will create a target folder with all the compiled classes and resources.
 
 5. mvn clean package: to clean the project and package it, it will delete the target folder and create a jar file or war file in the target folder.
+
+6. mvn dependency:tree: to display the dependencies of the project, it will display the project's dependencies and their dependencies.
+
+
+Repositories:
+
+1. Local Repository: This is the .m2/repository folder in your local machine. Its where Maven stores the downloaded dependencies so it doesn't have to download them again. If a dependency is already present in the local repository, Maven will use it instead of downloading it again.
+
+2. Central Repository (official online repository): This is Maven's official public repository hosted on the internet. It contains millions of open-source libraries. If something is not available in the local repository, Maven will try to download it from the central repository.
+
+3. Remote Repository (Company or Third-Party server): These are additional repos defined in pom.xml or settings.xml. Often used by companies or private teams to host internal jars.

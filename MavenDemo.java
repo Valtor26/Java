@@ -66,6 +66,8 @@
     Examples:
     spring, hibernate, junit, kafka, redis
 
+    You can search for and find maven dependencies at: https://mvnrepository.com
+
     =========================================================================
 
     Maven Goals: Used to perform specific steps in the Maven build lifecycle.
