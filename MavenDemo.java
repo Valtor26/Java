@@ -11,7 +11,8 @@
 
     Maven Terminologies:
 
-    mvn archetype:generate -DgroupId=com.abhishek -DartifactId=maven-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+    java simple app command: mvn archetype:generate -DgroupId=com.abhishek -DartifactId=maven-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+    java web app command: mvn archetype:generate -DgroupId=com.abhishek -DartifactId=maven-web-app -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.0 -DinteractiveMode=false
 
 
     Archetype: Is a template that defines the structure of a Maven project.

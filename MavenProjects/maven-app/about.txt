@@ -1,0 +1,14 @@
+The target/ folder is created by Maven when you run commands like mvn compile, mvn test, or mvn package. It stores generated build output, not your original source code.
+
+
+Maven commands:
+
+1. mvn compile: to compile the project, it will create a target folder with all the compiled classes and resources.
+
+2. mvn clean: to clean the project, it will delete the target folder.
+
+3. mvn package (compile + test + package): to package the project, it will create a jar file or war file in the target folder.
+
+4. mvn test (compile + test): to run the unit tests, it will create a target folder with all the compiled classes and resources.
+
+5. mvn clean package: to clean the project and package it, it will delete the target folder and create a jar file or war file in the target folder.
