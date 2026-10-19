@@ -81,4 +81,27 @@
 
     Examples:
     Central Repository, Local Repository, Remote Repository
+
+    =========================================================================
+
+
+    Maven Build Lifecycle:
+
+    1. default: Main lifecycle for building your application (Most commonly used).
+    2. clean: Cleaning the target/directory.
+    3. site: for generatubg documentation.
+
+    
+    validate -> compile -> test -> package -> verify -> install -> deploy
+
+
+    validate: Validate the project is correct and all necessary information is available.
+    compile: Compile the source code of the project.
+    test: run any unit tests for the project.
+    package: Create the package (jar/war) of the project.
+    verify: Verify the package (jar/war) of the project.
+    install: Install the package (jar/war) of the project. Used to add the package to the local repository.
+    deploy: Deploy the package (jar/war) of the project.
+
+    =========================================================================
 */
