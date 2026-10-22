@@ -21,8 +21,8 @@ my-project/
 
 Gradle Commands:
 
-- gradle build  ---> Builds the project
-- gradle clean  ---> Cleans the project
+- gradle build  ---> Builds the project and generates the JAR file
+- gradle clean  ---> Cleans the project by removing the build directory
 - gradle run  ---> Runs the application
 - gradle test  ---> Runs the tests
 - gradle jar  ---> Creates a JAR file
