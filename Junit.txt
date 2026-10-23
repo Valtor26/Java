@@ -1,0 +1,16 @@
+Junit is a testing framework for Java. It is used to write and execute tests for Java applications.
+
+
+Assertions: comparing actual and expected values
+
+assertEquals(expected, actual): 
+- Checks if two objects are equal
+- If not, it throws an AssertionError
+
+Junit Annotations:
+
+@Test: 
+- Marks a method as a test method.
+- Visibility: public, protected default
+- Also informs test engine what method needs to run
+- It only checks for failure, the default result is always success
