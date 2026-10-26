@@ -16,5 +16,10 @@ class ReverseStringTest {
 	void testReverse() {
 		assertNotEquals("avaJa",rev.reverseString("Java"),()->"The output is wrong");
 	}
+	
+	@Test
+	void testAssertTrue() {
+		assertTrue(2 == 2);
+	}
 
 }

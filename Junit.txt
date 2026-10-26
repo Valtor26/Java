@@ -25,6 +25,21 @@ assertNotEquals(expected,actual): Reverse of assertEquals
 - Checks if two objects are not equal
 - If they are equal, it throws an AssertionError
 
+
+assertTrue(actual): Passes if the actual value is true or else throws an AssertionError
+
+assertFalse(actual): Passes if the actual value is false or else throws an AssertionError
+
+assertArrayEquals(expected,actual): Passes if the two arrays are equal or else throws an AssertionError
+    - Number of elements must be equal
+    - Each element must be equal
+    - The order of elements must be equal
+    - If not, it throws an AssertionError
+
+assertThrows(expectedException,actualCodeBlock): Passes if the actual code block throws the expected exception or else throws an AssertionError
+
+assertTimeout(timeoutInMillis,actualCodeBlock): Passes if the actual code block does not throw an exception within the given timeout or else throws an AssertionError
+
 Junit Annotations:
 
 @Test: 
@@ -32,3 +47,24 @@ Junit Annotations:
 - Visibility: public, protected default
 - Also informs test engine what method needs to run
 - It only checks for failure, the default result is always success
+
+@BeforeEach:
+- Before each test, method is executed
+
+@AfterEach:
+- After each test, method is executed   
+
+@BeforeAll: the method should be static, because it is executed before initializing the class
+- Before all tests, method is executed at the start only once
+  
+@AfterAll: method should be static because it is executed before initializing the class
+- After all tests are executed, this method is executed at the end only once
+
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS):
+- The class is initialized only once before all tests
+- means one test class instance shared across all test methods.
+  
+@TestInstance(TestInstance.Lifecycle.PER_METHOD):
+- Creates a new instance for each test method
+- means one test class instance per test method.
