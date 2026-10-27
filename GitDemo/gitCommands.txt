@@ -1,0 +1,44 @@
+
+git config --global user.name "Abhishek"
+git config --email user.email "abhishek@gmail.com"
+
+// By default, git will create a master branch when you run git init, so we need to explicitly mention our branch name as main
+
+git init -b main
+
+// check the status of the repo
+git status
+
+// add a file to the staging area
+git add <file-name>
+
+// commit the changes to the local repository
+git commit -m "commit message"
+
+// move from modified/working directory to commit without staging
+git commit -a -m "commit message"
+
+// push the changes to the remote repository
+git push origin main 
+
+// get the history of commits
+git log
+
+// get the history of commits for a specific file
+git log <file-name>
+
+// get the history of commits for a specific file in a specific branch
+git log <branch-name> <file-name>
+
+// get the history of commits for a specific branch
+git log <branch-name> 
+
+// get the differences between the current code in the working directory and the last commit
+git diff 
+
+// get the differences between the current code in the staging area and the last commit
+git diff --staged
+
+// delete a file after committing it
+git rm --cached <file-name>
+
