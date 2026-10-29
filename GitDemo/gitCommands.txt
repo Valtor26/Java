@@ -42,3 +42,117 @@ git diff --staged
 // delete a file after committing it
 git rm --cached <file-name>
 
+// Cloning a remote repo from git hub
+git clone https://github.com/abhi/java.github
+
+// Create a readme file and write a message into it
+echo "# any message" >> README.md
+
+// see whats inside the file
+cat README.md
+
+// ssh
+ssh-keygen -o
+
+
+// Git tags:
+
+In Git, a tag is a reference to a specific commit in your repository's history. Tags are commonly used to mark important points in a project's development, such as software releases and versions.
+
+For example, when you complete version 1.0 of your Java project, you can create a Git tag called v1.0.0.
+
+Instead of remembering a commit hash, you can use the tag to identify that release.
+
+A. Lightweight tags
+    A lightweight tag is essentially a named reference to a commit.
+
+Create one:
+git tag v1.0.0
+
+This tags your current commit.
+
+To tag a specific commit:
+git tag v1.0.0 <commit-hash>
+
+Lightweight tags are useful when you need a simple reference to a commit.
+
+B. Annotated tags
+    An annotated tag stores additional information, including:
+    - Tagger's name and email.
+    - Date of tagging.
+    - A message describing the tag.
+    - A cryptographic signature, if you choose to sign it.
+
+Create an annotated tag:
+git tag -a v1.0.0 -m "First stable release"
+
+Recommended: Use annotated tags for releases because they preserve useful metadata.
+
+Push the tag to GitHub:
+    git push origin v1.0.0
+
+To push all your local tags:
+    git push origin --tags
+
+This pushes your local tags to the remote repository.
+
+5. How to delete a tag from GitHub
+
+First, delete the local tag:
+git tag -d v1.0.0
+
+Then delete the remote tag:
+git push origin --delete v1.0.0
+
+These are separate operations because local and remote tags are managed independently.
+
+// Git branching 
+
+1. Create new branching
+
+git checkout -b feature1 (this creates a new branch and switches to it)
+
+(or)
+
+git switch -c feature1
+
+2. Change branch
+
+git checkout branchname  (git checkout main)
+
+(or)
+
+git switch branchname
+
+3. Check current branch
+
+git branch
+
+A. Get all branches including remote
+
+git branch --all
+
+4. Delete a branch 
+
+git branch -d feature1
+
+5. To force-delete an unmerged branch:
+
+git branch -D feature/login
+
+6. Merging branch: To merge first switch to the branch to where you want to merge it
+
+For example i want to merge feature1 to main
+
+ - Switch to main from feature1 (git switch main)
+ - git merge feature1
+
+ 7. Switch to previous branch
+
+for example if i switched from feature1 to feature2, the below command will take me from feature2 to feature1
+
+ git switch -
+
+ 8. Push your local branch to remote
+
+ git push origin feature1
