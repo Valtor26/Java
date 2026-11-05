@@ -1,0 +1,4 @@
+Time complexity: The rate at which the execution time increases with respect to the input size
+
+Space complexity: the auxilary/extra space required by the algorithm with respect to the input size
+
