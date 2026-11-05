@@ -1,0 +1,16 @@
+JDBC: Java Data Base Connectivity
+
+    Java App/Program <---- JDBC ----> Database
+
+- Helps to connect Java with Database for performing various operations on the data.
+
+
+Steps involved in developing JDBC application:
+
+1. import the required package (download and add Database specific jar into the project, because java only gives the interface and the actual implementation is done by the db vendors)
+2. Loading and register the driver
+3. Establish the connection
+4. Create the statement 
+5. Execute the query
+6. Process the result
+7. Close the connection
