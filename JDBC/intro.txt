@@ -14,3 +14,6 @@ Steps involved in developing JDBC application:
 5. Execute the query
 6. Process the result
 7. Close the connection
+
+
+Class.forName("class-name") ==> is used to load a class dynamically at runtime without explicitly creating an object (instantiating it).
