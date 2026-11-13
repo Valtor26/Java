@@ -7,7 +7,7 @@ public class LearnLinkedListQueue{
     public static void main(String[] args) {
         Queue<Integer> que = new LinkedList<>();
 
-        que.offer(12);
+        que.offer(12); // insert 12
         que.offer(14);
         que.offer(16);
 

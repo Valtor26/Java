@@ -23,7 +23,7 @@ public class LearnArrayList {
         ls.add(3, 50); // add 50 at the 3rd index
         System.out.println(ls);
 
-        System.out.println(ls.get(0));
+        System.out.println(ls.get(0)); // returns the element at index 0
 
         List<Integer> newList = new ArrayList<>();
         newList.add(99);
@@ -31,13 +31,13 @@ public class LearnArrayList {
 
         System.out.println(newList);
 
-        ls.remove(0);
+        ls.remove(0); // remove the element at index 0
 
         ls.remove(Integer.valueOf(4)); // Remove the element 4
 
         System.out.println(ls);
 
-        ls.set(0, 100); // update the value at index 0
+        ls.set(0, 100); // update the value at index 0 to 100
         System.out.println(ls);
 
         System.out.println(ls.contains(100)); // return true if 100 is present else false
